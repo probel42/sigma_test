@@ -1,0 +1,38 @@
+@import "constants";
+
+.mainPane {
+	-fx-background-color: $background-color;
+	-fx-font-size: $font-size;
+
+	.label {
+		-fx-text-fill: $text-color;
+		-fx-text-alignment: center;
+	}
+
+	.text-field {
+		-fx-text-fill: $text-color;
+		-fx-background-color: $text-field-color;
+		-fx-border-color: $input-field-border-color;
+		-fx-border-width: $input-field-border-width;
+	}
+
+	.button {
+		-fx-background-color: $buttons-color;
+		-fx-background-radius: $buttons-radius;
+		-fx-border-color: $border-color;
+		-fx-border-width: $border-width;
+		-fx-text-fill: $text-color;
+
+		&:hover {
+			-fx-background-color: $buttons-hover-color;
+		}
+
+		&:pressed {
+			-fx-background-color: $buttons-pressed-color;
+		}
+
+		&:disabled {
+			-fx-background-color: $buttons-disabled-color;
+		}
+	}
+}

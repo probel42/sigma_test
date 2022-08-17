@@ -1,0 +1,12 @@
+{
+    "type": "question",
+    "question": "живёт на суше",
+    "false": {
+        "type": "subject",
+        "subject": "кит"
+    },
+    "true": {
+        "type": "subject",
+        "subject": "кот"
+    }
+}

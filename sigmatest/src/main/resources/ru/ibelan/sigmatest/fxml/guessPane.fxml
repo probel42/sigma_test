@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane styleClass="mainPane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+			fx:controller="ru.ibelan.sigmatest.controllers.GuessPaneController">
+	<children>
+		<Label fx:id="guessLabel" alignment="CENTER" layoutX="50.0" layoutY="50.0" prefHeight="140.0"
+			   prefWidth="700.0"/>
+		<Button fx:id="okButton" layoutX="310.0" layoutY="250.0" onAction="#onClickOk" prefHeight="50.0"
+				prefWidth="180.0" text="ОК"/>
+		<Button fx:id="notCorrectButton" layoutX="280.0" layoutY="310.0" onAction="#onClickNo" prefHeight="20.0"
+				prefWidth="240.0"/>
+	</children>
+</AnchorPane>

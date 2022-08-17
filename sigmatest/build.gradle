@@ -1,0 +1,43 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.10'
+    id "com.liferay.css.builder" version "5.0.4"
+}
+
+group 'ru.ibelan'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://repository-cdn.liferay.com/nexus/content/groups/public"
+    }
+}
+
+dependencies {
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.3'
+    implementation 'org.mongodb:mongo-java-driver:3.12.11'
+    compileOnly "org.projectlombok:lombok:1.18.24"
+    annotationProcessor "org.projectlombok:lombok:1.18.24"
+}
+
+mainClassName = 'ru.ibelan.sigmatest.Main'
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'ru.ibelan.sigmatest.Main'
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+javafx {
+    version = "18.0.2"
+    modules = ['javafx.controls', 'javafx.fxml']
+}
+
+test {
+    useJUnitPlatform()
+}

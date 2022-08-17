@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<AnchorPane styleClass="mainPane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+			fx:controller="ru.ibelan.sigmatest.controllers.AddDataPaneController">
+	<children>
+		<Label fx:id="topLabel" alignment="CENTER" layoutX="50.0" layoutY="50.0" prefHeight="50.0"
+			   prefWidth="700.0" text="Хм... а кто это?"/>
+		<TextField fx:id="answerField" alignment="CENTER" layoutX="50.0" layoutY="110.0" prefHeight="50.0"
+				   prefWidth="700.0"/>
+		<Button fx:id="submitButton" layoutX="310.0" layoutY="250.0" onAction="#onClickSubmit" prefHeight="50.0"
+				prefWidth="180.0" text="Добавить"/>
+	</children>
+</AnchorPane>
