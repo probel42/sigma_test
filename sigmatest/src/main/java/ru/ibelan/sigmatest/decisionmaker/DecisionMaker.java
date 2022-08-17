@@ -1,9 +1,9 @@
 package ru.ibelan.sigmatest.decisionmaker;
 
 /**
- * Класс принимающий решения о следующем вопросе
+ * Класс, принимающий решения о следующем вопросе
  *
- * @param <T> инициализирующие данные
+ * @param <T> тип данных с которым работает Decision maker
  */
 public interface DecisionMaker<T> {
 	void initData(T init);
